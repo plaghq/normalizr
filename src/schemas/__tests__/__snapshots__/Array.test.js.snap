@@ -145,7 +145,7 @@ Immutable.Map {
 }
 `;
 
-exports[`ArraySchema normalization Class filters out undefined and null normalized values 1`] = `
+exports[`ArraySchema normalization Class filters out undefined normalized values 1`] = `
 Object {
   "entities": Object {
     "user": Object {
@@ -156,6 +156,7 @@ Object {
   },
   "result": Array [
     123,
+    null,
   ],
 }
 `;

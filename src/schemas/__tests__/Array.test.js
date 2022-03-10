@@ -81,7 +81,7 @@ describe(`${schema.Array.name} normalization`, () => {
       expect(normalize({ foo: { id: 1 }, bar: { id: 2 } }, users)).toMatchSnapshot();
     });
 
-    test('filters out undefined and null normalized values', () => {
+    test('filters out undefined normalized values', () => {
       const userSchema = new schema.Entity('user');
       const users = new schema.Array(userSchema);
       expect(normalize([undefined, { id: 123 }, null], users)).toMatchSnapshot();

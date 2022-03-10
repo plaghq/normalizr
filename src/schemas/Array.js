@@ -32,7 +32,7 @@ export default class ArraySchema extends PolymorphicSchema {
 
     return values
       .map((value, index) => this.normalizeValue(value, parent, key, visit, addEntity, visitedEntities))
-      .filter((value) => value !== undefined && value !== null);
+      .filter((value) => value !== undefined);
   }
 
   denormalize(input, unvisit) {

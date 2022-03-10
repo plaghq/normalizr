@@ -81,18 +81,18 @@ Immutable.Map {
 }
 `;
 
-exports[`ObjectSchema normalization filters out undefined and null values 1`] = `
+exports[`ObjectSchema normalization filters out undefined values 1`] = `
 Object {
   "entities": Object {
     "user": Object {
       "1": Object {
         "id": "1",
       },
-      "undefined": Object {},
     },
   },
   "result": Object {
     "bar": "1",
+    "foo": null,
   },
 }
 `;
