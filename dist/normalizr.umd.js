@@ -444,7 +444,7 @@
           return _this.normalizeValue(value, parent, key, visit, addEntity, visitedEntities);
         })
         .filter(function (value) {
-          return value !== undefined && value !== null;
+          return value !== undefined;
         });
     };
 
